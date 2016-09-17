@@ -1,0 +1,4 @@
+本次共找到 3 个文件
+Filename:main.exe, Sha1:[55 106 250 15 140 133 72 66 230 66 201 35 186 225 212 127 106 177 150 171], fileSize:2247KB 
+Filename:dirTreefile.txt, Sha1:[93 119 55 9 139 124 83 75 250 47 109 113 96 120 228 33 254 189 223 74], fileSize:1KB 
+Filename:readme.txt, Sha1:[172 45 112 1 9 138 9 93 204 35 223 102 175 16 203 223 61 49 130 23], fileSize:2KB 
