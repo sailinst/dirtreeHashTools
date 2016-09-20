@@ -71,8 +71,7 @@ func delFileSuffix(suffix []string) []string {
 			if v == e.Value {
 				suflist.Remove(e)
 				fmt.Printf("从suffixArray[]中删除后缀 %s成功！ \n", v)
-			}
-			if e == nil {
+			} else if e.Next() == nil {
 				fmt.Printf("suffixArray[]中不包含%s 的后缀名。\n", v)
 			}
 		}
