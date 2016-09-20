@@ -12,7 +12,7 @@ func dowork() {
 	var path string
 	var a string
 	fmt.Println("输入目录的路径：")
-	fmt.Scan(&path)
+	fmt.Scanln(&path)
 	// 判断path是否有效， 若无效，则提醒用户重新输入path
 
 	fileList := dirTree.PrintFileDir(path)
@@ -20,17 +20,22 @@ func dowork() {
 	outFile.GetfileName(fileList)
 
 	//fmt.Println("文件路径为：", fileList)
-	fmt.Printf("输入quit退出，输入其他则继续：\t")
-	fmt.Scan(&a)
+	fmt.Printf("输入命令继续操作：\n \t\tgo:\t继续...\n \t\tquit：\t退出系统\n \t\t退出：\t退出系统\n")
+LB:
+	fmt.Scanln(&a)
 	//fmt.scanln(&a)
 	switch a {
+	default:
+
+		fmt.Println("输入有误，请重新输入...")
+		goto LB
+	case "go":
+		dowork()
 	case "quit":
 		exit()
 	case "退出":
 		exit()
-	default:
 
-		dowork()
 	}
 
 	// 初始化变量
