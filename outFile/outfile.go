@@ -1,4 +1,4 @@
-package outfile
+package outFile
 
 import (
 	"dirtreeHash/SHA1"
